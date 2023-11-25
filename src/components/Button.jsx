@@ -6,7 +6,7 @@ function Button(props) {
                 text-2xl bg-indigo-600 rounded-full hover:bg-indigo-700 focus:outline-none focus:ring-2
                 focus:ring-indigo-600 focus:ring-opacity-50"
         onClick={props.handleClick}
-    >-</button>
+    >{props.text}</button>
     )
 }
 
