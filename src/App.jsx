@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header.jsx";
 import Button from "./components/Button.jsx";
+import { moneyFormat} from "./helpers";
 
 function App() {
     let [amount, setAmount] = useState(5000);
@@ -57,7 +58,7 @@ function App() {
                step="100"
                value={amount}
         />
-        <p className="text-center my-10 text-5xl font-extrabold text-indigo-600">{amount + "$"}</p>
+        <p className="text-center my-10 text-5xl font-extrabold text-indigo-600">{moneyFormat(amount)}</p>
     </div>
     )
 }
